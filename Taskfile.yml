@@ -1,0 +1,19 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+
+tasks:
+  default:
+    cmds:
+      - echo "{{.GREETING}}"
+    silent: true
+  build:
+    desc: Builds the app
+    cmds:
+      - go build -o ./bin/ocm-discord-bot -v ./src/
+  run:
+    desc: Start the app
+    cmds:
+      - ./bin/ocm-discord-bot
