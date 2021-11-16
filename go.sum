@@ -1,2 +1,4 @@
+github.com/kelseyhightower/envconfig v1.4.0 h1:Im6hONhd3pLkfDFsbRgu68RDNkGF1r3dvMUtDTo2cv8=
+github.com/kelseyhightower/envconfig v1.4.0/go.mod h1:cccZRl6mQpaq41TPp5QxidR+Sa3axMbJDNb//FQX6Gg=
 github.com/themobilecoder/ocm-meta v0.0.0-20211116080552-93c35fdb40d3 h1:fx7rfJPO1YfmhIXrxfA6+GQ/fS0dzifqYsjGprWV6nc=
 github.com/themobilecoder/ocm-meta v0.0.0-20211116080552-93c35fdb40d3/go.mod h1:yHYw2imzQzI1f2zgOGU3h4LPFhT54pJj48a/ZcSuUV0=
