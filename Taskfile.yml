@@ -12,8 +12,14 @@ tasks:
   build:
     desc: Builds the app
     cmds:
+      - go mod tidy
       - go build -o ./bin/ocm-discord-bot -v ./src/
   run:
     desc: Start the app
     cmds:
       - ./bin/ocm-discord-bot
+  br:
+    desc: Build and run the app
+    cmds:
+      - task: build
+      - task: run
