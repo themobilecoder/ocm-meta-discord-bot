@@ -23,3 +23,11 @@ tasks:
     cmds:
       - task: build
       - task: run
+  docker-build:
+    desc: Build the docker image
+    cmds:
+      - docker build --tag docker-ocm-meta-bot .
+  docker-run:
+    desc: Runs the docker image
+    cmds:
+      - docker run -d --env OCM_GUILD_ID --env DISCORD_API_KEY --name ocm-meta-bot docker-ocm-meta-bot
