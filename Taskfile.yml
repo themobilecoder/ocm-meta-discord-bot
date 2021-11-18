@@ -26,7 +26,7 @@ tasks:
   docker-build:
     desc: Build the docker image
     cmds:
-      - docker build --tag docker-ocm-meta-bot .
+      - docker build --tag ocm-meta-discord-bot .
   docker-run:
     desc: Runs the docker image
     cmds:
