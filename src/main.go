@@ -14,7 +14,6 @@ import (
 
 type Config struct {
 	DISCORD_API_KEY string `envconfig:"DISCORD_API_KEY" required:"true"`
-	OCM_GUILD_ID    string `envconfig:"OCM_GUILD_ID" required:"true"`
 }
 
 var monkeys []meta.Monkey
@@ -174,7 +173,7 @@ func main() {
 	}
 
 	for _, v := range commands {
-		_, err := s.ApplicationCommandCreate(s.State.User.ID, cfg.OCM_GUILD_ID, v)
+		_, err := s.ApplicationCommandCreate(s.State.User.ID, "", v)
 		if err != nil {
 			log.Panicf("Cannot create '%v' command: %v", v.Name, err)
 		}
