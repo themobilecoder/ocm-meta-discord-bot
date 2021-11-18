@@ -1,10 +1,17 @@
 # ocm-meta-discord-bot
 Unofficial Discord bot to check the metas of your OnChainMonkey.
 
+## Permissions
+Requires the following permissions to work on Discord
+```
+Scope: Bot
+Bot Permissions: Use Slash Commands
+```
+
 ## Traits
 All OCM meta traits are obtained from [Metagood's Repo](https://github.com/metagood/OnChainMonkeyData), and are subject to change.
 
-```bash
+```
 color match, mouth match, zeroes, nips, poker hands, twins
 ```
 ## Setup
