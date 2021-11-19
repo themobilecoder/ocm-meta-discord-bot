@@ -5,6 +5,7 @@ WORKDIR /app
 
 COPY go.mod ./
 COPY go.sum ./
+COPY buildspec.yml ./
 RUN go mod download
 
 COPY src/*.go ./
