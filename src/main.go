@@ -57,10 +57,8 @@ var commandHandlers = map[string]func(s *discordgo.Session, i *discordgo.Interac
 					{
 						Title: "OCM #" + idString,
 						URL:   "https://opensea.io/assets/0x960b7a6bcd451c9968473f7bbfd9be826efd549a/" + idString,
-						Image: &discordgo.MessageEmbedImage{
-							URL:    "https://d3q7x2s6555pey.cloudfront.net/png/" + idString + ".png",
-							Width:  24,
-							Height: 24,
+						Thumbnail: &discordgo.MessageEmbedThumbnail{
+							URL: "https://d3q7x2s6555pey.cloudfront.net/png/" + idString + ".png",
 						},
 						Type: "rich",
 						Footer: &discordgo.MessageEmbedFooter{
