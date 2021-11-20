@@ -10,6 +10,5 @@ RUN go mod download
 
 COPY src/*.go ./
 RUN go build -o /docker-ocm-meta-bot
-RUN chmod +x /docker-ocm-meta-bot
 
 CMD ["/docker-ocm-meta-bot"]
